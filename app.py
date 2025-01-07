@@ -11,7 +11,7 @@ def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 app = Flask(__name__)
-app.secret_key = 'bearnroxie'
+app.secret_key = os.environ.get('SECRET_KEY', 'bearnroxie')
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 
@@ -69,3 +69,7 @@ def comparsion():
     not_followed_back = following - followers  
 
     return not_followed_back
+
+if __name__ == "__main__":
+    port = int(os.environ.get('PORT', 5000))  # Use the PORT environment variable
+    app.run(debug=True, host='0.0.0.0', port=port)
