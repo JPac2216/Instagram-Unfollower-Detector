@@ -15,7 +15,7 @@ The **Instagram Unfollower Detector** is a web application that helps users iden
    - Choose **Followers and following**.
    - Set the date range to **All time** and request the data in **JSON** format.
 3. Download the data sent to your email.
-4. Visit Instagram Unfollower Detector.
+4. Visit the [Instagram Unfollower Detector](https://instagram-unfollower-detector.onrender.com/).
 5. Upload the `followers_1.json` and `following.json` files on the website.
 6. View the generated list of unfollowers.
 
