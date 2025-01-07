@@ -31,7 +31,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .alert {
@@ -41,4 +41,17 @@
     width: auto;
     max-width: 300px;
     max-height: 50px;
+    margin-bottom: 20px;
   }
+
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.row {
+  text-align: center;
+}

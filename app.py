@@ -37,10 +37,12 @@ def upload_file():
             filename2 = secure_filename(following.filename)
             followers.save(os.path.join(app.config['UPLOAD_FOLDER'], filename1))
             following.save(os.path.join(app.config['UPLOAD_FOLDER'], filename2))
-            flash('Files uploaded successfully.')
 
             result = comparsion()
-            return render_template('index.html')
+
+            os.remove(os.path.join(app.config['UPLOAD_FOLDER'], filename1))
+            os.remove(os.path.join(app.config['UPLOAD_FOLDER'], filename2))
+            return render_template('index.html', result = result)
         else:
             flash('Please upload JSON files only.')
             return redirect(request.url)
