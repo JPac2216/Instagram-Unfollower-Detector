@@ -56,5 +56,5 @@ This project is licensed under the MIT License.
 - Bootstrap for the CSS framework.
 
 ---
-Enjoy using the Instagram Unfollower Detector to manage your Instagram connections!
+Enjoy using the Instagram Unfollower Detector to manage your Instagram connections!  
 Note: This website does NOT save or store any user information.
